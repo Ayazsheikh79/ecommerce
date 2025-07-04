@@ -121,10 +121,10 @@ export function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          " top-0 left-0 right-0 z-50 transition-all duration-300",
           isScrolled 
-            ? "backdrop-blur-md bg-white/80 dark:bg-black/80 shadow-lg border-b border-white/20" 
-            : "backdrop-blur-sm bg-white/60 dark:bg-black/60"
+            ? "backdrop-blur-md bg-white/80 dark:bg-black/80 shadow-lg border-b border-white/20 transition-all duration-300"
+            : "sticky backdrop-blur-sm bg-white/60 dark:bg-black/60"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
